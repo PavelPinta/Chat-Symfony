@@ -1,0 +1,6 @@
+services:
+    test_auth.registration.form.type:
+        class: ChatBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: test_auth_registration }	

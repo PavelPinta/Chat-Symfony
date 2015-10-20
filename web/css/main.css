@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Ubuntu, Arial;
+    color: #444;
+}
+
+.main {
+    width: 900px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header{
+    height: 30px;
+    padding: 10px 20px;
+    text-align: right;
+    width: 500px;
+    position: fixed;
+    margin-left: 340px;
+    background-color: white;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    background-color: #bbb;
+    padding: 5px 20px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 1px rgba(50,50,50,0.5);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.contactlist{
+    width: 220px;
+    height: 100%;
+    float: left;
+    overflow: auto;
+    box-shadow: -2px 5px 8px 1px rgba(50,50,50,0.5);    
+}
+
+.main  .content {
+    height: 100%;
+    width: 670px;
+    margin-left: 230px;
+    overflow: auto;
+    box-shadow: 2px 5px 7px 1px rgba(50,50,50,0.5);    
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.modal-wrap{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0; 
+    background-color: rgba(0,0,0,0.2);
+}
+
+.modal{
+    width: 400px;
+    min-height: 100px;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    background-color: white;
+    margin-left: -250px;
+    text-align: right;
+    padding: 0 50px;
+    padding-bottom: 15px;    
+    box-shadow: 0 0 5px 1px rgba(50,50,50,0.7);
+}
+
+.modal .title {
+    padding: 10px;
+    height: 25px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+.error{
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.modal input {
+    border: 0px;
+    box-shadow: 0 2px 2px 1px rgba(50,50,50,0.5);
+    font-size: 18px;
+    padding: 6px 5px;
+    margin: 7px 0px;
+    color: #444;
+    width: 230px;
+}
+
+.modal label {
+    margin-right: 20px;
+}
+
+.modal hr {
+    margin: 6px 0;
+}
+
+.modal .submit {
+    font-size: 18px;
+    width: 100px;
+    padding: 6px;
+    border: 0px;
+    background-color: #aaa;
+    color: white;
+    margin-left: 20px;
+    box-shadow: 0 2px 2px 1px rgba(50,50,50,0.5);
+    cursor: pointer;
+}
+
+.modal .close-button{
+    width: 100px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#profile, #msg, #new-msg {
+    display: none;
+}
+
+.modal textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    resize: none;
+    border: 0px solid #aaa;
+    padding: 8px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px 0px rgba(50,50,50,0.5);
+}
+
+.clear {
+    clear: both;
+}
+
+.message {
+    min-width: 200px;
+    max-width: 80%;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.my {
+    float: right;
+    border: 1px solid #cc0;
+    background-color: #ffd;
+    border-radius: 30px 30px 0 30px;
+}
+
+.message > div {
+    margin-bottom: 15px;
+    
+}
+
+.message div p {
+    font-size: 10px;
+    font-style: italic;
+    text-align: right;
+}
+
+.message div h3{
+    float: left;
+    font-size: 14px;
+}
+
+.message span .text {
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.message span a {
+    margin-left: 10px;
+    font-style: italic;
+    color: #999;
+    cursor: pointer;
+}
+
+.your {
+    float: left;
+    border: 1px solid #ccf;
+    background-color: #f4fcff;
+    border-radius: 30px 30px 30px 0;
+}
+
+#show-more{
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    width: 100px;
+    text-align: center;
+    padding: 3px 7px;
+    border-radius: 8px;
+    color: #aaa;
+    background-color: #f9f9f9;
+    cursor: pointer;  
+}
+
+::-webkit-scrollbar{
+    width:12px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+}
+
+::-webkit-scrollbar-track{
+    border-width:0;
+}
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}

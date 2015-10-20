@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Welcome to chat!{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script></script>
+<script type="text/javascript" src="../js/login.js"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="page">
+            <div class="window">
+                    <div class="wrap">
+                            <div class="title">
+                                    <div class="tab-login active">Login</div>
+                                    <div class="tab-reg passive">Reg</div>
+                            </div>
+                            <div class="content">
+                                    <div  class="img"></div>
+                                    <form>
+                                            <input type="text" id="username" placeholder="login..." />
+                                            <input type="password" id="password" placeholder="passwors..." />
+                                            <input type="button" class="submit" name="submit" value="Sigh In">
+                                    </form>
+                            </div>
+                    </div>
+            </div>
+    </div>
+{% endblock %}

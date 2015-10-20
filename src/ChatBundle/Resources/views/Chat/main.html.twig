@@ -1,0 +1,36 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Welcome to chat!{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/messages.js"></script>
+{% endblock %}
+
+
+
+{% block body %}
+
+    <div class="main">
+            <div class="header">
+                    {% include 'ChatBundle:Chat:header.html.twig'%}
+            </div>
+            <div class="contactlist">
+
+            </div>
+            <div class="content" id="content">
+                    <div id="show-more">Show more</div>
+            </div>
+    </div>
+    <div class="modal-wrap">
+            <div class="modal">
+                    <div class="title">
+                            <div class="close">[ close ]</div>
+                    </div>
+                    <div class="error"></div>
+                    {% include 'ChatBundle:Chat:profile.html.twig' %}
+            </div>
+    </div>
+
+{% endblock %}
